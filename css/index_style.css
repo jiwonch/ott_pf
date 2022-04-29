@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MinSans-Light;
+}
+
+body {
+    height: 100%;
+    overflow-y: hidden;
+    font-size: 10px;
+}
+
+html {
+    height: 100%;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#wrap>.wrap_af {
+    content: "";
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* 페이지 슬라이드 버튼 */
+#dot {
+    width: 50px;
+    height: 250px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+#dot>ul {
+    width: 40px;
+    height: 220px;
+}
+
+#dot li{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: -0px -0px 5px rgba(255, 255, 255, 0.1);
+}
+
+#dot li a{
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    position: absolute;
+}
+
+#dot ul .active{
+    box-shadow: 0 0 0 2px #eee;
+}
+
+#dot ul li:nth-of-type(2).active{
+    box-shadow: 0 0 0 2px #a0ef08;
+}
+#dot ul li:nth-of-type(3).active{
+    box-shadow: 0 0 0 2px #d61308;
+}
+#dot ul li:nth-of-type(4).active{
+    box-shadow: 0 0 0 2px #0189ff;
+}
+#dot ul li:nth-of-type(5).active{
+    box-shadow: 0 0 0 2px #0cdaff;
+}
+
+.active a{
+    transform: scale(0.4);
+}
+
+#dot li:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*page*/
+.page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-color: black;
+}
+
+/* p0 */
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.background{
+    position: absolute;
+    top: 10%;
+}
+
+section .page:not(:nth-of-type(2n)).con_wrap .background{
+    left: 0;
+}
+
+section .page:nth-of-type(2n) .con_wrap .background{
+    right: 0;
+}
+
+.p01{
+    background-color: #000;
+}
+
+.p02{
+    background-color: green;
+}
+
+.p03{
+    background-color: salmon;
+}
+
+.pf_bot{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+}
+
+/* content 부분 시작 */
+#slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slider video{
+    /* min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%; */
+    width: 100vw;
+    height: auto;
+    z-index: 300;
+}
+
+header{
+    z-index: 400;
+    min-width: 100%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+
+header:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+#logo{
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    float: left;
+    margin: 20px;
+}
+
+#logo a img{
+    width: 100%;
+    height: 100%;
+}
+
+header nav{
+    width: 700px;
+    height: 30px;
+    margin: 35px 30px;
+    /* background-color: red; */
+    float: left;
+}
+
+header nav ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul a li{
+    float: left;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: MinSans-Light;
+    padding-bottom: 10px;
+}
+
+header nav ul a li:hover{
+    border-bottom: 4px solid gold;
+}
+
+#page1_text{
+    position: absolute;
+    z-index: 400;
+    width: 800px;
+    height: 200px;
+    margin: -200px 0 0 -400px;
+    padding: 30px;
+    left: 50%;
+    top: 60%;
+    color: gold;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#page2_textline{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+}
+
+#page2_textline h1{
+    font-size: 40px;
+    font-family: MinSans-Light;
+
+}
+
+#page2_imgline{
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    background-color: blue;
+}
