@@ -143,6 +143,7 @@ section{
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .background{
@@ -160,20 +161,24 @@ section .page:nth-of-type(2n) .con_wrap .background{
 
 .p01{
     background-color: #000;
+    overflow: hidden;
 }
 
 .p02{
     background-color: #000;
+    overflow: hidden;
 }
 
 .p03{
     background-color: #000;
+    overflow: hidden;
 }
 
 .pf_bot{
     width: 100%;
     height: 100%;
     background-color: #000;
+    overflow: hidden;
 }
 
 /* content 부분 시작 */
