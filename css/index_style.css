@@ -203,11 +203,23 @@ section .page:nth-of-type(2n) .con_wrap .background{
     height: 200px;
     margin: -200px 0 0 -400px;
     padding: 30px;
-    left: 50%;
-    top: 60%;
+    left: 22%;
+    top: 95%;
     color: gold;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: bold;
+}
+
+#box_triangle{
+    position: absolute;
+    z-index: 380;
+    width: 1000px;
+    height: 100%;
+    top: 0;
+    left: -900px;
+    background-color: #555;
+    opacity: 0.3;
+    transform: skew(60deg);
 }
 
 #page2_textline{
@@ -271,8 +283,16 @@ section .page:nth-of-type(2n) .con_wrap .background{
 }
 
 .rolling_boxe{
-    width: 300px;
+    width: 350px;
     height: 550px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rolling_boxf{
+    width: 300px;
+    height: 430px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -315,7 +335,7 @@ section .page:nth-of-type(2n) .con_wrap .background{
     width: 300px;
     height: 400px;
     background-color: #a0ef08;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 
 .page2_sec2{
@@ -339,8 +359,8 @@ section .page:nth-of-type(2n) .con_wrap .background{
 }
 
 .ps2_txt h3{
-    color: gold;
-    font-size: 30px;
+    color: white;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
@@ -349,7 +369,7 @@ section .page:nth-of-type(2n) .con_wrap .background{
     width: 35%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -359,12 +379,15 @@ section .page:nth-of-type(2n) .con_wrap .background{
     height: 450px;
     background-color: #a0ef08;
     margin-top: 70px;
+    margin-left: 150px;
 }
 
 .p2s_txt2{
-    width: 350px;
-    height: 150px;
+    width: 400px;
+    height: 250px;
     background-color: #a0ef08;
+    margin-top: -30px;
+    margin-left: 5px;
 }
 
 .p3box{
@@ -390,15 +413,15 @@ section .page:nth-of-type(2n) .con_wrap .background{
     width: 250px;
     height: 250px;
     background-color: #a0ef08;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin-left: 200px;
+    margin-bottom: 100px;
 }
 
 .p3s_img2{
     width: 300px;
     height: 400px;
     background-color: #a0ef08;
-    margin-left: 25%;
+    margin-left: 80px;
 }
 
 .page3_sec2{
@@ -409,7 +432,7 @@ section .page:nth-of-type(2n) .con_wrap .background{
     align-items: center;
 }
 
-.ps3_txt{
+.p3s_txt{
     width: 100%;
     height: 20%;
 }
@@ -442,14 +465,14 @@ section .page:nth-of-type(2n) .con_wrap .background{
     height: 450px;
     background-color: #a0ef08;
     margin-top: 70px;
-    margin-left: 80px;
+    margin-left: 300px;
 }
 
 .p3s_txt2{
-    width: 350px;
-    height: 150px;
+    width: 400px;
+    height: 250px;
     background-color: #a0ef08;
-    margin-left: 80px;
+    margin-left: 120px;
 }
 
 .lp_text{
@@ -459,9 +482,9 @@ section .page:nth-of-type(2n) .con_wrap .background{
 }
 
 .lp_content{
-    width: 81%;
+    width: 1240px;
     height: 85%;
-    margin: 0 auto;
+    margin: 100px auto;
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -473,8 +496,7 @@ section .page:nth-of-type(2n) .con_wrap .background{
 .lp_box{
     width: 400px;
     height: 300px;
-    margin: 10px 5px;
-    
+    margin: 5px 5px 5px 5px;
     float: left;
     background-color: white;
 }
