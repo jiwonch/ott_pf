@@ -14,10 +14,11 @@ header:hover{
 }
 
 #logo{
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 35px;
     float: left;
-    margin: 20px;
+    margin-top: 32px;
+    margin-left: 50px;
 }
 
 #logo a img{
@@ -50,3 +51,118 @@ header nav ul a li{
 header nav ul a li:hover{
     border-bottom: 4px solid gold;
 }
+
+#mainBtn{
+    width: 100%;
+    margin: 30px;
+    margin-left: 1600px;
+}
+
+#myBtn,#Btn{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color:rgb(255, 194, 25);
+    border: 1px solid rgb(0, 0, 0);
+    z-index: 400;
+}
+
+/* login popup */
+
+.modal{
+    margin: 100px auto;  
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+}
+
+.close{
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    opacity: 0.6;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#main_login{
+    box-sizing: border-box;
+    width: 400px;
+    height:500px;
+    border: 2px solid rgb(94, 94, 94);
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+#login-box h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+#login-box #email,#pw{
+  display: flex;
+  margin: 20px;  
+  margin: 20px auto;
+}
+
+input[type="email"]{
+    width: 300px;
+    height: 30px; 
+    
+}
+input[type="password"]{
+    width: 300px;
+    height: 30px;    
+}
+
+#loginbutton{
+    width: 308px;
+    height: 40px;
+    margin: 10px 5px;
+    background-color: rgb(255, 194, 25);
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login_info{
+    font-size: 10px;
+    width: 230px;
+    
+}
+#login-box .help{
+    font-size: 10px;
+    position: absolute;
+    margin: -15px 110px;
+    width: 200px;
+    text-align: right;
+}
+#login-box .no{
+    text-align: center;
+    font-size: 15px;
+    margin: 70px auto;
+}
+#login-box .go{
+    text-align: center;
+    font-size: 10px;
+    color: blue;
+}
+#login-box .point{
+    color: rgb(255, 194, 25);
+}
+#login-box a{text-decoration: none;
+    color: rgb(145, 145, 145);}
