@@ -1,7 +1,33 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MinSans-Light;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
 header{
     z-index: 400;
     min-width: 100%;
-    height: 10%;
+    height: 95px;
     position: absolute;
     left: 0;
     top: 0;
@@ -49,22 +75,39 @@ header nav ul a li{
 }
 
 header nav ul a li:hover{
-    border-bottom: 4px solid gold;
+    border-bottom: 4px solid rgb(255, 194, 25);
 }
 
 #mainBtn{
     width: 100%;
-    margin: 30px;
-    margin-left: 1600px;
+    padding: 30px 0 0 1500px;
+    
 }
 
-#myBtn,#Btn{
-    width: 100px;
+#myBtn{
+    width: 120px;
     height: 40px;
     cursor: pointer;
-    background-color:rgb(255, 194, 25);
-    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
     z-index: 400;
+    border-radius: 5px;
+    border: 2px solid transparent;
+   
+}
+#Btn{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color:transparent;
+    border: 2px solid rgb(255, 194, 25);
+    z-index: 400;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 5px;
+    color: white;
 }
 
 /* login popup */
@@ -134,7 +177,6 @@ input[type="password"]{
     height: 40px;
     margin: 10px 5px;
     background-color: rgb(255, 194, 25);
-    border: 1px solid black;
     font-weight: bold;
     cursor: pointer;
 }
