@@ -11,6 +11,8 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/index_animation.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/rolling_banner.js"></script>
+    <script src="js/fullpage.js"></script>
 
 </head>
 
@@ -40,49 +42,42 @@
                     <div id="logo"><a href="index.html"><img src="img/common/logo.png" alt="justwatch"></a></div>
                     <nav>
                         <ul>
-                            
-                                
-                                <li><a href="movies.html">영화</a></li>
-                            
-                           
-                           
-                                <li>  <a href="schedule.html">스케쥴 </a> </li>
-                           
-                           
-                                <li> <a href="browse.html">브라우저</a></li>
-                           
+                            <li><a href="movies.html">영화</a></li>
+                            <li> <a href="schedule.html">스케쥴 </a> </li>
+                            <li> <a href="browse.html">브라우저</a></li>
                         </ul>
                     </nav>
                     <div id="mainBtn">
                         <button type="button" id="myBtn">로그인</button>
-                        <button onclick="location.href='ticket.html'" type="button" id="Btn" >구독하기</button>
+                        <button onclick="location.href='ticket.html'" type="button" id="Btn">구독하기</button>
                     </div>
-            
-                    
+
+
                 </header>
 
                 <div id="main_login" class="modal">
                     <div id="login-box" class="login-content">
                         <span class="close">&times;</span>
 
-                         <form>
-                    <h2>로그인</h2>
+                        <form>
+                            <h2>로그인</h2>
 
-                    
-                    <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
-                    
-                    <input type="password" id="pw" placeholder="비밀번호">
-                    
-                    <button type="button" id="loginbutton">로그인</button>
 
-                    <input type="checkbox" class="checkbox" checked>
-                    <label class="login_info">로그인 정보저장</label>
+                            <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
 
-                    <p class="help"><a href="#">도움이 필요하신가요?</a></p>
-                    <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a href="">지금가입하세요.</a></b></p>
-                    
+                            <input type="password" id="pw" placeholder="비밀번호">
 
-                </form>
+                            <button type="button" id="loginbutton">로그인</button>
+
+                            <input type="checkbox" class="checkbox" checked>
+                            <label class="login_info">로그인 정보저장</label>
+
+                            <p class="help"><a href="#">도움이 필요하신가요?</a></p>
+                            <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a
+                                        href="">지금가입하세요.</a></b></p>
+
+
+                        </form>
                     </div>
                 </div>
 
@@ -106,78 +101,32 @@
                 <div id="page2_imgline">
                     <div class="rolling_banner">
                         <div class="rolling_boxa rb">
-                            <a href="#" class="rolling"><img src="img/index/rolling_a.jpg" alt="rolling_a"></a>
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_a.jpg" alt="rolling_a"></a>
                         </div>
 
                         <div class="rolling_boxb rb">
-                            <a href="#" class="rolling"><img src="img/index/rolling_b.jpg" alt="rolling_b"></a>
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_b.jpg" alt="rolling_b"></a>
                         </div>
 
                         <div class="rolling_boxc rb">
-                            <a href="#" class="rolling"><img src="img/index/rolling_c.jpg" alt="rolling_C"></a>
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_c.jpg" alt="rolling_C"></a>
                         </div>
 
                         <div class="rolling_boxd rb">
-                            <a href="#" class="rolling"><img src="img/index/rolling_d.jpg" alt="rolling_d"></a>
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_d.jpg" alt="rolling_d"></a>
                         </div>
 
                         <div class="rolling_boxe rb">
-                            <a href="#" class="rolling"><img src="img/index/rolling_e.jpg" alt="rolling_e"></a>
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_e.jpg" alt="rolling_e"></a>
                         </div>
 
                         <div class="rolling_boxf rb">
-                            <a href="#" class="rolling"><img src="img/index/rolling_f.jpg" alt="rolling_f"></a>
+                            <a href="schedul_sub.html" class="rolling"><img src="img/index/rolling_f.jpg" alt="rolling_f"></a>
                         </div>
 
                     </div>
                 </div>
             </div>
-
-
-            <!-- rolling-banner 영화 이미지 슬라이드 -->
-            <script>
-                var banner_left = 0;
-                var img_cnt = 0;
-                var first = 1;
-                var last;
-                var interval;
-
-                $(document).ready(function () {
-                    $(".rb").each(function () {
-                        $(this).css("left", banner_left);
-                        banner_left += $(this).width() + 100;
-                        $(this).attr("id", "content" + (++img_cnt));
-                    });
-
-                    last = img_cnt;
-                    startAction();
-
-                    $(".content").hover(
-                        function () { stopAction(); },
-                        function () { starAction(); });
-                });
-
-                function startAction() {
-                    interval = setInterval(function () {
-                        $(".rb").each(function () {
-                            $(this).css("left", $(this).position().left - 1);
-                        });
-
-                        var first_content = $("#content" + first);
-                        var last_content = $("#content" + last);
-
-                        if (first_content.position().left < "-" + $(first_content).width()) {
-                            first_content.css("left", last_content.position().left + last_content.width() + 100);
-                            first++;
-                            last++;
-                            if (last > img_cnt) { last = 1; }
-                            if (first > img_cnt) { first = 1; }
-                        }
-
-                    }, 10);
-                }
-
-            </script>
 
 
             <div class="page p02 section" id="p2">
@@ -220,131 +169,35 @@
                             <img src="img/index/imovie_bs.jpg" alt="movie_stealcut">
                         </div>
                         <img src="img/index/imovie_bp.jpg" alt="movie_poster" id="p3s_img4">
-                        
+
                     </div>
                 </div>
             </div>
             <div class="pf_bot page section" id="p4">
-              
+
                 <div class="lp_content">
-                  
+
                     <div class="ip_content_back">
                         <img src="img/index/main_4_back.jpg" alt="a">
-                        
+
                     </div>
                     <div class="ip_content_light">
-                        <a href=""><img src="img/index/main_4_light.png" alt="a"></a>
+                        <a href="#"><img src="img/index/main_4_light.png" alt="a"></a>
                     </div>
 
                     <div class="ip_content_on">
-                        <a href=""><img src="img/index/main_4_on.png" alt="a"></a>
-                        <p>저스트왓치에서 언제 어디서나 최고의 화질로 감상하세요. </p> 
+                        <a href="#                         "><img src="img/index/main_4_on.png" alt="a"></a>
+                        <p>저스트왓치에서 언제 어디서나 최고의 화질로 감상하세요. </p>
                     </div>
-                  
+
                 </div>
-               
+
             </div>
-            
+
         </section>
-        
+
     </div>
 
-    <script>
-        $(function () {
-            var dot = $("#dot ul li");
-            var contents = $(".page_wrap>.page");
-
-            dot.click(function (e) {
-                e.preventDefault();
-                var target = $(this);
-                var index = target.index();
-                var section = contents.eq(index);
-                var offset = section.offset().top;
-                $("html, body").animate({ scrollTop: offset }, 600);
-            });
-
-            $(window).scroll(function () {
-                var wScroll = $(this).scrollTop();
-
-                if (wScroll >= contents.eq(0).offset().top) {
-                    dot.css({ "background": "rgba(255, 255, 255, 0.1)" });
-                    dot.find("a").css({ "background": "rgba(255, 255, 255, 0.5)" });
-                    dot.removeClass("active");
-                    dot.eq(0).addClass("active");
-                    dot.eq(0).find("a").css({ "background": "#0cdaff" });
-                }
-
-                if (wScroll >= contents.eq(1).offset().top) {
-                    dot.css({ "background": "rgba(255, 255, 255, 0.1)" });
-                    dot.find("a").css({ "background": "rgba(255, 255, 255, 0.5)" });
-                    dot.removeClass("active");
-                    dot.eq(1).addClass("active");
-                    dot.eq(1).find("a").css({ "background": "#0189ff" });
-                }
-
-                if (wScroll >= contents.eq(2).offset().top) {
-                    dot.css({ "background": "rgba(255, 255, 255, 0.1)" });
-                    dot.find("a").css({ "background": "rgba(255, 255, 255, 0.5)" });
-                    dot.removeClass("active");
-                    dot.eq(2).addClass("active");
-                    dot.eq(2).find("a").css({ "background": "#f0a91b" });
-                }
-
-                if (wScroll >= contents.eq(3).offset().top) {
-                    dot.css({ "background": "rgba(255, 255, 255, 0.1)" });
-                    dot.find("a").css({ "background": "rgba(255, 255, 255, 0.5)" });
-                    dot.removeClass("active");
-                    dot.eq(3).addClass("active");
-                    dot.eq(3).find("a").css({ "background": "#d6130f" });
-                }
-
-                if (wScroll >= contents.eq(4).offset().top) {
-                    dot.css({ "background": "rgba(255, 255, 255, 0.1)" });
-                    dot.find("a").css({ "background": "rgba(255, 255, 255, 0.5)" });
-                    dot.removeClass("active");
-                    dot.eq(4).addClass("active");
-                    dot.eq(4).find("a").css({ "background": "#a0ef08" });
-                }
-            });
-
-            return false;
-        });
-
-        $(function () {
-            $('.wrap_af').hide();
-
-            $(".fa-bars").click(function () {
-                $("#side").animate({ left: '0' }, 500);
-                $(this).fadeOut();
-                $('.wrap_af').fadeIn();
-            });
-
-            $(".fa-chevron-left").click(function () {
-                $("#side").animate({ left: '-310' }, 500);
-                $(".fa-bars").fadeIn();
-                $(".wrap_af").fadeOut();
-            });
-        });
-
-        $(function () {
-            var win_h = $(window).height();
-            $('.page').each(function (index) {
-                $(this).attr("data-index", win_h * index);
-            });
-
-            $('.page').on("mousewheel", function (e) {
-                var pagePos = parseInt($(this).attr("data-index"));
-                if (e.originalEvent.wheelDelta >= 0) {
-                    $("html,body").stop().animate({ scrollTop: pagePos - win_h });
-                    return false;
-                } else if (e.originalEvent.wheelDelta < 0) {
-                    $("html,body").stop().animate({ scrollTop: pagePos + win_h });
-                    return false;
-                }
-            });
-        });
-    </script>
-    
 </body>
 
 </html>

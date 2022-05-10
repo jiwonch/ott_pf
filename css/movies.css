@@ -35,8 +35,8 @@ section img{width: 100%; height: 100%; opacity: 0.3;}
 /* 슬라이드키 */
 #movies span{text-align: center; font-size: 40px; color: white; display: inline-block; background-color: #888; opacity: 0.6; border-radius: 10px;}
 #movies span:hover{cursor: pointer;}
-#movies .prev{position: absolute; top: 60%; left: 0%; width: 30px; height: 55px;}
-#movies .next{position: absolute; top: 60%; right: 0%; width: 30px; height: 55px;}
+#movies .prev{position: absolute; top: 60%; left: 0%; width: 30px; height: 53px;}
+#movies .next{position: absolute; top: 60%; right: 0%; width: 30px; height: 53px;}
 /* 이미지 박스 */
 .moviesbox{width: 100%; height: 65%; overflow: hidden;position: relative;}
 .moviesbox img{width: 100%; height: 100%;transition: ease all 0.5s;}
@@ -57,8 +57,8 @@ section img{width: 100%; height: 100%; opacity: 0.3;}
 /* 슬라이드키 */
 #thmovies span{text-align: center; font-size: 40px; color: white; display: inline-block; background-color: #888; opacity: 0.6; border-radius: 10px;}
 #thmovies span:hover{cursor: pointer;}
-#thmovies .thprev{position: absolute; top: 50%; left: 0%; width: 30px; height: 55px;}
-#thmovies .thnext{position: absolute; top: 50%; right: 0%; width: 30px; height: 55px;}
+#thmovies .thprev{position: absolute; top: 50%; left: 0%; width: 30px; height: 53px;}
+#thmovies .thnext{position: absolute; top: 50%; right: 0%; width: 30px; height: 53px;}
 /* 이미지 박스 */
 .thmoviesbox{width: 100%; height: 65%; overflow: hidden;position: relative;}
 .thmoviesbox img{width: 100%; height: 100%;transition: ease all 0.5s;}
@@ -80,8 +80,8 @@ section img{width: 100%; height: 100%; opacity: 0.3;}
 /* 슬라이드키 */
 #usamovies span{text-align: center; font-size: 40px; color: white; display: inline-block; background-color: #888; opacity: 0.6; border-radius: 10px;}
 #usamovies span:hover{cursor: pointer;}
-#usamovies .usaprev{position: absolute; top: 60%; left: 0%; width: 30px; height: 55px;}
-#usamovies .usanext{position: absolute; top: 60%; right: 0%; width: 30px; height: 55px;}
+#usamovies .usaprev{position: absolute; top: 60%; left: 0%; width: 30px; height: 53px;}
+#usamovies .usanext{position: absolute; top: 60%; right: 0%; width: 30px; height: 53px;}
 /* 이미지 박스 */
 .usamoviesbox{width: 100%; height: 65%; overflow: hidden;position: relative;}
 .usamoviesbox img{width: 100%; height: 100%;transition: ease all 0.5s;}
@@ -102,8 +102,8 @@ section img{width: 100%; height: 100%; opacity: 0.3;}
 /* 슬라이드키 */
 #newusa span{text-align: center; font-size: 40px; color: white; display: inline-block; background-color: #888; opacity: 0.6; border-radius: 10px;}
 #newusa span:hover{cursor: pointer;}
-.newprev{position: absolute; top: 40%; left: 0%; width: 30px; height: 55px;}
-.newnext{position: absolute; top: 40%; right: 0%; width: 30px; height: 55px;}
+.newprev{position: absolute; top: 40%; left: 0%; width: 30px; height: 53px;}
+.newnext{position: absolute; top: 40%; right: 0%; width: 30px; height: 53px;}
 /* 이미지 박스 */
 .newusabox{width: 100%; height: 65%; overflow: hidden;position: relative;}
 .newbox img{width: 100%; height: 100%;transition: ease all 0.5s;}
