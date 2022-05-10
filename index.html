@@ -37,55 +37,56 @@
                     <video src="img/media/bm_mhead.mp4" loop muted autoplay></video>
                 </div>
                 <header>
-                    <div id="logo"><a href="#"><img src="img/common/logo.png" alt="google"></a></div>
+                    <div id="logo"><a href="index.html"><img src="img/common/logo.png" alt="justwatch"></a></div>
                     <nav>
                         <ul>
-                            <a href="movies.html">
-                                <li>영화 </li>
-                            </a>
-                            <a href="schedule.html">
-                                <li> 스케쥴 </li>
-                            </a>
-                            <a href="browse.html">
-                                <li> 브라우저 </li>
-                            </a>
+                            
+                                
+                                <li><a href="movies.html">영화</a></li>
+                            
+                           
+                           
+                                <li>  <a href="schedule.html">스케쥴 </a> </li>
+                           
+                           
+                                <li> <a href="browse.html">브라우저</a></li>
+                           
                         </ul>
                     </nav>
-
                     <div id="mainBtn">
                         <button type="button" id="myBtn">로그인</button>
-                        <a href="ticket.html"><button type="button" id="Btn">구독하기</button></a>
+                        <button onclick="location.href='ticket.html'" type="button" id="Btn" >구독하기</button>
                     </div>
+            
+                    
                 </header>
 
                 <div id="main_login" class="modal">
                     <div id="login-box" class="login-content">
                         <span class="close">&times;</span>
 
-                        <form action="">
-                            <h2>로그인</h2>
+                         <form>
+                    <h2>로그인</h2>
 
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
-                            <label for="password"></label>
-                            <input type="password" id="pw" placeholder="비밀번호">
+                    
+                    <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
+                    
+                    <input type="password" id="pw" placeholder="비밀번호">
+                    
+                    <button type="button" id="loginbutton">로그인</button>
 
-                            <button type="button" id="loginbutton">로그인</button>
+                    <input type="checkbox" class="checkbox" checked>
+                    <label class="login_info">로그인 정보저장</label>
 
-                            <input type="checkbox" class="checkbox" checked>
-                            <label for="login_info" class="login_info">로그인 정보저장</label>
+                    <p class="help"><a href="#">도움이 필요하신가요?</a></p>
+                    <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a href="">지금가입하세요.</a></b></p>
+                    
 
-                            <p class="help"><a href="#">도움이 필요하신가요?</a></p>
-                            <p class="no"><b class="point">JUST WATCH</b> 회원이 아니신가요? <b class="go"><a
-                                        href="">지금가입하세요.</a></b></p>
-
-
-                        </form>
-
+                </form>
                     </div>
                 </div>
 
-                <a href="subscribe.html">
+                <a href="ticket.html">
                     <div id="page1_text">
                         SPECIAL OFFERS<br>
                         1MONTHS 9,000원<br>
@@ -218,37 +219,34 @@
                         <div class="p3s_img3">
                             <img src="img/index/imovie_bs.jpg" alt="movie_stealcut">
                         </div>
-                        <div class="p3s_img4">
-                            <img src="img/index/imovie_bp.jpg" alt="movie_poster">
-                        </div>
+                        <img src="img/index/imovie_bp.jpg" alt="movie_poster" id="p3s_img4">
+                        
                     </div>
                 </div>
             </div>
             <div class="pf_bot page section" id="p4">
-               
+              
                 <div class="lp_content">
-                    <div class="lp_box">
-                        <img src="img/index/1_01.png" alt="a">
+                  
+                    <div class="ip_content_back">
+                        <img src="img/index/main_4_back.jpg" alt="a">
+                        
                     </div>
-                    <div class="lp_box">
-                        <img src="img/index/1_02.png" alt="a">
+                    <div class="ip_content_light">
+                        <a href=""><img src="img/index/main_4_light.png" alt="a"></a>
                     </div>
-                    <div class="lp_box">
-                        <img src="img/index/1_03.png" alt="a">
+
+                    <div class="ip_content_on">
+                        <a href=""><img src="img/index/main_4_on.png" alt="a"></a>
+                        <p>저스트왓치에서 언제 어디서나 최고의 화질로 감상하세요. </p> 
                     </div>
-                    <div class="lp_box">
-                        <img src="img/index/1_04.png" alt="a">
-                    </div>
-                    <div class="lp_box">
-                        <img src="img/index/1_05.png" alt="a">
-                    </div>
-                    <div class="lp_box">
-                        <img src="img/index/1_06.png" alt="a">
-                    </div>
+                  
                 </div>
                
             </div>
+            
         </section>
+        
     </div>
 
     <script>
@@ -346,6 +344,7 @@
             });
         });
     </script>
+    
 </body>
 
 </html>

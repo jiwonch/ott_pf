@@ -40,10 +40,10 @@ header:hover{
 }
 
 #logo{
-    width: 120px;
-    height: 35px;
+    width: 140px;
+    height: 50px;
     float: left;
-    margin-top: 32px;
+    margin-top: 20px;
     margin-left: 50px;
 }
 
@@ -65,7 +65,7 @@ header nav ul{
     justify-content: space-evenly;
 }
 
-header nav ul a li{
+header nav ul li a{
     float: left;
     font-size: 20px;
     color: white;
@@ -74,7 +74,7 @@ header nav ul a li{
     padding-bottom: 10px;
 }
 
-header nav ul a li:hover{
+header nav ul li a:hover{
     border-bottom: 4px solid rgb(255, 194, 25);
 }
 
@@ -99,16 +99,19 @@ header nav ul a li:hover{
 }
 #Btn{
     width: 150px;
-    height: 40px;
+    height: 50px;
     cursor: pointer;
     background-color:transparent;
-    border: 2px solid rgb(255, 194, 25);
+    border: 5px solid rgb(255, 194, 25);
     z-index: 400;
     font-weight: bold;
     font-size: 13px;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 10px 0px;
     color: white;
 }
+#Btn:hover{opacity: 0.8;}
+#myBtn:hover{opacity: 0.8;}
 
 /* login popup */
 
@@ -145,7 +148,7 @@ header nav ul a li:hover{
     box-sizing: border-box;
     width: 400px;
     height:500px;
-    border: 2px solid rgb(94, 94, 94);
+    border: 2px solid rgb(230, 230, 230);
     background-color: black;
     color: white;
     padding: 40px;
@@ -156,29 +159,46 @@ header nav ul a li:hover{
     margin: 10px 20px;
 }
 
+
+
 #login-box #email,#pw{
   display: flex;
   margin: 20px;  
   margin: 20px auto;
 }
 
+input::placeholder{color: white;}
+
 input[type="email"]{
     width: 300px;
     height: 30px; 
+    background-color: black;
+    box-sizing: content-box;  
+    border: 1px solid rgb(141, 141, 141);
+    padding: 10px;
+    caret-color: rgb(255, 194, 25);
     
 }
+
 input[type="password"]{
     width: 300px;
-    height: 30px;    
+    height: 30px;  
+    background-color: black;
+    box-sizing: content-box;  
+    border: 1px solid rgb(141, 141, 141);
+    padding: 10px;
+    caret-color: rgb(255, 194, 25);
 }
 
 #loginbutton{
-    width: 308px;
-    height: 40px;
-    margin: 10px 5px;
+    width: 300px;
+    height: 20px;
+    margin: 10px 0px;
     background-color: rgb(255, 194, 25);
+    padding: 10px;
     font-weight: bold;
     cursor: pointer;
+    box-sizing: content-box;
 }
 
 .login_info{
@@ -207,4 +227,211 @@ input[type="password"]{
     color: rgb(255, 194, 25);
 }
 #login-box a{text-decoration: none;
-    color: rgb(145, 145, 145);}
+    color: rgb(233, 233, 233);}
+
+    footer {
+        width: 100%;
+        height: 220px;
+    }
+    
+    #ft_box {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .ft1 {
+        background-color: black;
+        width: 100%;
+        height: 40px;
+    }
+    
+    .ft1_b1{
+        width: 1750px;
+        margin: 0 auto;
+        height: 100%;
+    }
+    
+    .ft1_b1_1{
+        color: white;
+        width: 100px;
+        height: 100%;
+        float: left;
+        text-align: center;
+        padding-top: 10px;
+        font-family: MinSans-Light;
+    }
+    
+    .ft1_b1_2{
+        height: 100%;
+        width: 1000px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .ft1_b1_2 p{
+        color: white;
+        width: 100%;
+        padding-top: 10px;
+        font-family: MinSans-Light;
+    }
+    
+    .ft1_b1_3{
+        width: 80px;
+        height: 100%;
+        float: right;
+        margin-right: 40px;
+        background-color: black;
+    }
+    
+    .ft1b13_1{
+        width: 50%;
+        height: 100%;
+        color: white;
+        font-size: 30px;
+        float: left;
+    }
+    
+    .ft1b13_2{
+        width: 50%;
+        height: 100%;
+        color: white;
+        font-size: 30px;
+        float: right;
+    }
+    
+    .ft2 {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .ft2_t1 {
+        background-color: black;
+        width: 60%;
+        height: 100%;
+        float: left;
+    }
+    
+    .ft_li_1 {
+        background-color: black;
+        width: 100%;
+        height: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 10px 80px 25px 80px;
+    }
+    
+    .ft_li_1 li {
+        float: left;
+        font-size: 12px;
+        color: white;
+        padding: 5px 30px 5px 10px;
+        font-family: MinSans-Light;
+    }
+    
+    .ft_bold {
+        font-weight: bold;
+    }
+    
+    .ft_li_2 {
+        background-color: black;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 10px 80px 0 80px;
+    }
+    
+    
+    .ft_li_2 li {
+        float: left;
+        font-size: 12px;
+        color: white;
+        padding: 5px 5px 0 10px;
+        font-family: MinSans-Light;
+    }
+    
+    .ft_li_3 {
+        background-color: black;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 80px 0 80px;
+    }
+    
+    
+    .ft_li_3 li {
+        float: left;
+        font-size: 12px;
+        color: white;
+        padding: 0 5px 0 10px;
+        font-family: MinSans-Light;
+    }
+    
+    .ft_li_4 {
+        background-color: black;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 80px 0 80px;
+    }
+    
+    
+    .ft_li_4 li {
+        float: left;
+        font-size: 12px;
+        color: white;
+        padding: 0 5px 0 10px;
+        font-family: MinSans-Light;
+    }
+    
+    .ft_li_5 {
+        background-color: black;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 80px 0 80px;
+    }
+    
+    
+    .ft_li_5 li {
+        float: left;
+        font-size: 12px;
+        color: white;
+        padding: 0 5px 0 10px;
+        font-family: MinSans-Light;
+    }
+    
+    .ft2_t2 {
+        background-color: black;
+        float: right;
+        width: 40%;
+        height: 100%;
+    }
+    
+    .ft2_t2_b {
+        background-color: rgb(0, 0, 0);
+        width: 290px;
+        height: 60px;
+        float: right;
+        margin-right: 100px;
+        margin-top: 10px;
+        color: white;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: MinSans-Light;
+    }
+    .ft2_t2_b img{
+        margin: 20px;
+    }
+    
+    

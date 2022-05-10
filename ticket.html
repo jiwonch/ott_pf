@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,105 +6,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ticket</title>
+    <title>JUST WATCH</title>
 
     <link rel="stylesheet" href="css/ticket.css">
     <link rel="stylesheet" href="css/common.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-  
-  <script>
-
-        $(function() {
-
-
-            //선택한 것에 테두리 추가
-            $('.ticket label').click(function(){
-                $('.ticket label').removeClass('active');
-                $(this).addClass('active');
-                
-            });
-
-            
-            // 이용권 선택시 구매창 구현
-            $('.bas').click(function() {
-                $(".Basic").fadeIn();
-                $(".Standard").hide();
-                $(".Premium").hide();
-                $(".FLO").hide();
-                $(".Bugs").hide();
-                $(".KB").hide();
-            });
-
-            $('.sta').click(function() {
-                $(".Basic").hide();
-                $(".Standard").fadeIn();
-                $(".Premium").hide();
-                $(".FLO").hide();
-                $(".Bugs").hide();
-                $(".KB").hide();
-            });
-
-            $('.pre').click(function() {
-                $(".Basic").hide();
-                $(".Standard").hide();
-                $(".Premium").fadeIn();
-                $(".FLO").hide();
-                $(".Bugs").hide();
-                $(".KB").hide();
-            });
-
-            $('.xflo').click(function() {
-                $(".Basic").hide();
-                $(".Standard").hide();
-                $(".Premium").hide();
-                $(".FLO").fadeIn();
-                $(".Bugs").hide();
-                $(".KB").hide();
-            });
-
-            $('.xbug').click(function() {
-                $(".Basic").hide();
-                $(".Standard").hide();
-                $(".Premium").hide();
-                $(".FLO").hide();
-                $(".Bugs").fadeIn();
-                $(".KB").hide();
-            });
-            
-            $('.xkb').click(function() {
-                $(".Basic").hide();
-                $(".Standard").hide();
-                $(".Premium").hide();
-                $(".FLO").hide();
-                $(".Bugs").hide();
-                $(".KB").fadeIn();
-            });
-        });
-
-    </script>
-
-
-
+    <script src="js/ticket.js"></script>
+    <script src="js/login.js"></script>
 </head>
 
 <body>
-   
+
     <header>
-        <div id="logo"><a href="#"><img src="img/logo.png" alt="google"></a></div>
+        <div id="logo"><a href="index.html"><img src="img/common/logo.png" alt="google"></a></div>
         <nav>
             <ul>
-                <a href="#">
-                    <li>영화 </li>
-                </a>
-                <a href="#">
-                    <li> 스케쥴 </li>
-                </a>
-                <a href="#">
-                    <li> 브라우저 </li>
-                </a>
+                
+                    
+                    <li><a href="movies.html">영화</a></li>
+                
+               
+               
+                    <li>  <a href="schedule.html">스케쥴 </a> </li>
+               
+               
+                    <li> <a href="browse.html">브라우저</a></li>
+                
             </ul>
         </nav>
+        <div id="mainBtn">
+            <button type="button" id="myBtn">로그인</button>
+            <button onclick="location.href='ticket.html'" type="button" id="Btn" >구독하기</button>
+        </div>
+        
     </header>
+
+    <div id="main_login" class="modal">
+        <div id="login-box" class="login-content">
+            <span class="close">&times;</span>
+
+            <form>
+                <h2>로그인</h2>
+
+
+                <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
+
+                <input type="password" id="pw" placeholder="비밀번호">
+
+                <button type="button" id="loginbutton">로그인</button>
+
+                <input type="checkbox" class="checkbox" checked>
+                <label class="login_info">로그인 정보저장</label>
+
+                <p class="help"><a href="#">도움이 필요하신가요?</a></p>
+                <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a href="">지금가입하세요.</a></b></p>
+
+
+            </form>
+
+        </div>
+    </div>
+
 
     <div class="textbox">
         <div class="text">
@@ -124,6 +87,7 @@
                         <span>Basic</span>
                         <span>동시시청 1회선, HD화질, 모바일+PC</span>
                         <span>9,000원</span>
+                    </label>
                 </li>
                 <li>
                     <label>
@@ -154,10 +118,11 @@
                         <span>Basic X FLO 무제한</span>
                         <span>동시시청 1회선, HD화질, 모바일+PC (FLO 에서 구매 가능)</span>
                         <span>13,750원</span>
+                    </label>
                 </li>
                 <li>
                     <label>
-                        <input type="radio" name="Watch" class="xbug" >
+                        <input type="radio" name="Watch" class="xbug">
                         <span>Basic X Bugs 듣기</span>
                         <span>동시시청 1회선, HD화질, 모바일+PC</span>
                         <span>13,750원</span>
@@ -227,7 +192,7 @@
             <p>동시시청 1회선, 최상위 화질, 전체 디바이스</p>
 
             <div class="money">
-                <span>9,000원</span><span>구매하기</span>   
+                <span>9,000원</span><span>구매하기</span>
             </div>
         </div>
         <div class="Standard">
@@ -236,7 +201,7 @@
             <p>동시시청 2회선, FHD화질, 전체디바이스</p>
 
             <div class="money">
-                <span>10,900원</span><span>구매하기</span>   
+                <span>10,900원</span><span>구매하기</span>
             </div>
         </div>
         <div class="Premium">
@@ -245,7 +210,7 @@
             <p>동시시청 4회선, 최상위 화질, 전체디바이스</p>
 
             <div class="money">
-                <span>13,900원</span><span>구매하기</span>   
+                <span>13,900원</span><span>구매하기</span>
             </div>
         </div>
         <div class="FLO">
@@ -254,7 +219,7 @@
             <p>동시시청 1회선, HD화질, 모바일+PC (FLO 에서 구매 가능)</p>
 
             <div class="money">
-                <span>13,750원</span><span>구매하기</span>   
+                <span>13,750원</span><span>구매하기</span>
             </div>
         </div>
         <div class="Bugs">
@@ -263,7 +228,7 @@
             <p>동시시청 1회선, 최상위 화질, 전체 디바이스</p>
 
             <div class="money">
-                <span>13,750원</span><span>구매하기</span>   
+                <span>13,750원</span><span>구매하기</span>
             </div>
         </div>
         <div class="KB">
@@ -272,14 +237,10 @@
             <p>동시시청 1회선, HD화질, 모바일+PC</p>
 
             <div class="money">
-                <span>6,700원</span><span>구매하기</span>   
+                <span>6,700원</span><span>구매하기</span>
             </div>
         </div>
     </div>
-
-
-
-
 
     <footer></footer>
 </body>

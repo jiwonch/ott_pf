@@ -12,13 +12,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: MinSans-Light;
-    background-color: black;
 }
 
 ul,
 li,
 ol {
     list-style: none;
+}
+
+body {
+    background-color: black;
 }
 
 a {
@@ -194,13 +197,13 @@ a {
 }
 
 /* 메인 장르 선택 목록ul박스 */
-#movie_type_box {
+.movie_type_box {
     width: 906px;
     height: 64px;
     margin: 0 auto;
     margin-top: 45px;
 }
-#movie_type_box #movie_type {
+.movie_type_box .movie_type {
     width: 300px;
     height: 64px;
     float: left;
@@ -209,25 +212,25 @@ a {
     letter-spacing: 5px;
 }
 
-#movie_type_box #movie_type:hover {
+.movie_type_box .movie_type:hover {
     opacity: 0.7;
 }
 
-#movie_type_box #movie_type .movie_type1 {
+.movie_type_box .movie_type .movie_type1 {
     margin-top: 3px;
 }
 
-#movie_type_box #movie_type .movie_type1 .movie_type_logo {
+.movie_type_box .movie_type .movie_type1 .movie_type_logo {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
 }
 
-#movie_type_box #movie_type .movie_type2 {
+.movie_type_box .movie_type .movie_type2 {
     margin-top: -8px;
 }
 
-#movie_type_box #movie_type .movie_type2 .movie_type_name {
+.movie_type_box .movie_type .movie_type2 .movie_type_name {
     font-size: 18px;
     font-weight: 500;
     margin-top: -30px;
@@ -235,7 +238,7 @@ a {
 }
 
 /* 메인 영화 콘텐츠 박스 */
-#schedule_main_contents_box1 {
+.schedule_main_contents_box1 {
     width: 820px;
     height: 252px;
     margin: 0 auto;
@@ -255,7 +258,7 @@ a {
     color: #fff;
 }
 
-#schedule_main_contents_box_parents {
+.schedule_main_contents_box_parents {
     width: 820px;
     height: 205px;
     display: flex;
@@ -624,7 +627,7 @@ a {
     margin-top: 10px;
 }
 
-#movie_infor_box {
+.movie_infor_box {
     width: 443px;
     height: 18px;
     letter-spacing: 2px;
@@ -638,7 +641,7 @@ a {
     font-size: 12px;
 }
 
-#movie_story_text_box {
+.movie_story_text_box {
     width: 443px;
     height: 100px;    
     font-size: 15px;
@@ -647,7 +650,7 @@ a {
     margin-top: 13px;
 }
 
-#movie_icon_box {
+.movie_icon_box {
     width: 443px;
     height: 30px;
     /* border: 1px solid #333; */

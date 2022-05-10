@@ -1,67 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JUST WATCH</title>
 
     <link rel="stylesheet" href="css/movies.css">
     <link rel="stylesheet" href="css/common.css">
-
-
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
 
 </head>
 
 <body>
-
-
-
     <header>
         <div id="logo"><a href="index.html"><img src="img/common/logo.png" alt="google"></a></div>
         <nav>
             <ul>
-                <a href="#">
-                    <li>영화 </li>
-                </a>
-                <a href="schedule.html">
-                    <li> 스케쥴 </li>
-                </a>
-                <a href="browse.html">
-                    <li> 브라우저 </li>
-                </a>
+                
+                    
+                    <li><a href="movies.html">영화</a></li>
+                
+               
+               
+                    <li>  <a href="schedule.html">스케쥴 </a> </li>
+               
+               
+                    <li> <a href="#">브라우저</a></li>
+               
             </ul>
         </nav>
-
         <div id="mainBtn">
             <button type="button" id="myBtn">로그인</button>
-            <button type="button" id="Btn">구독하기</button>
+            <button onclick="location.href='ticket.html'" type="button" id="Btn" >구독하기</button>
         </div>
+
+        
     </header>
 
     <div id="main_login" class="modal">
         <div id="login-box" class="login-content">
             <span class="close">&times;</span>
 
-            <form action="">
+            <form>
                 <h2>로그인</h2>
 
-                <label for="email"></label>
+                
                 <input type="email" id="email" placeholder="이메일 주소 또는 전화번호">
-                <label for="password"></label>
+                
                 <input type="password" id="pw" placeholder="비밀번호">
-
+                
                 <button type="button" id="loginbutton">로그인</button>
 
                 <input type="checkbox" class="checkbox" checked>
-                <label for="login_info" class="login_info">로그인 정보저장</label>
+                <label class="login_info">로그인 정보저장</label>
 
                 <p class="help"><a href="#">도움이 필요하신가요?</a></p>
-                <p class="no"><b class="point">JUST WATCH</b> 회원이 아니신가요? <b class="go"><a
-                            href="">지금가입하세요.</a></b></p>
-
+                <p class="no"><b class="point">JustWatch</b> 회원이 아니신가요? <b class="go"><a href="">지금가입하세요.</a></b></p>
+                
 
             </form>
 
@@ -71,10 +69,10 @@
     <section>
         <img src="img/movies/header.jpg" alt="영화모음">
         <div class="text">
-            <h2>EXPLORE THOUSANDS OF HITS</h2>
-            <p>Watch your favorite series and movies with our special offer for only $3/mo for 6 months.</p>
+            <h2>수천 건의 히트작과 함께하세요.</h2>
+            <p>6개월 동안 특별한 제안으로 좋아하는 시리즈와 영화를 감상하세요.</p>
         </div>
-        <a href="ticket.html"><button class="login">CLAIM SPECIAL OFFER</button></a>
+        <a href="ticket.html" class="login">구독권 구매하기</a>
     </section>
 
 
@@ -188,8 +186,8 @@
             </div>
 
         </div>
-        <span class="prev">&lt</span>
-        <span class="next">&gt</span>
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
 
 
     </div>
@@ -300,8 +298,8 @@
                 <p>2014 | May | 19th</p>
             </div>
         </div>
-        <span class="thprev">&lt</span>
-        <span class="thnext">&gt</span>
+        <span class="thprev">&lt;</span>
+        <span class="thnext">&gt;</span>
     </div>
 
     <div id="usamovies">
@@ -410,8 +408,8 @@
                 <p>2016 | July | 13th</p>
             </div>
         </div>
-        <span class="usaprev">&lt</span>
-        <span class="usanext">&gt</span>
+        <span class="usaprev">&lt;</span>
+        <span class="usanext">&gt;</span>
     </div>
 
 
@@ -526,72 +524,66 @@
                 <p>2021 | June | 16th</p>
             </div>
         </div>
-        <span class="newprev">&lt</span>
-        <span class="newnext">&gt</span>
+        <span class="newprev">&lt;</span>
+        <span class="newnext">&gt;</span>
     </div>
 
-    <script>
-
-
-                // 드라마장르
-                $('.prev').click(function () {
-                    $('.movieslist .movbox:last').prependTo('.movieslist');
-                    $('.movieslist').css('margin-left', -319.5);
-                    $('.movieslist').stop().animate({ marginLeft: 0 }, 300)
-                });
-
-                $('.next').click(function () {
-                    $('.movieslist').stop().animate({ marginLeft: -319.5 }, 300, function () {
-                        $('.movieslist  .movbox:first').appendTo('.movieslist');
-                        $('.movieslist').css({ marginLeft: 0 });
-                    });
-                });
-
-                // 스릴러장르
-                $('.thprev').click(function () {
-                    $('.thmovieslist .thmovbox:last').prependTo('.thmovieslist');
-                    $('.thmovieslist').css('margin-left', -319.5);
-                    $('.thmovieslist').stop().animate({ marginLeft: 0 }, 300)
-                });
-
-                $('.thnext').click(function () {
-                    $('.thmovieslist').stop().animate({ marginLeft: -319.5 }, 300, function () {
-                        $('.thmovieslist  .thmovbox:first').appendTo('.thmovieslist');
-                        $('.thmovieslist').css({ marginLeft: 0 });
-                    });
-                });
-
-                // 외국 영화 인기 콘텐츠
-                $('.usaprev').click(function () {
-                    $('.usamovieslist .usamovbox:last').prependTo('.usamovieslist');
-                    $('.usamovieslist').css('margin-left', -319.5);
-                    $('.usamovieslist').stop().animate({ marginLeft: 0 }, 300)
-                });
-
-                $('.usanext').click(function () {
-                    $('.usamovieslist').stop().animate({ marginLeft: -319.5 }, 300, function () {
-                        $('.usamovieslist  .usamovbox:first').appendTo('.usamovieslist');
-                        $('.usamovieslist').css({ marginLeft: 0 });
-                    });
-                });
-
-                // 외국 새로운 영화
-                $('.newprev').click(function () {
-                    $('.newlist .newbox:last').prependTo('.newlist');
-                    $('.newlist').css('margin-left', -319.5);
-                    $('.newlist').stop().animate({ marginLeft: 0 }, 300)
-                });
-
-                $('.newnext').click(function () {
-                    $('.newlist').stop().animate({ marginLeft: -319.5 }, 300, function () {
-                        $('.newlist  .newbox:first').appendTo('.newlist');
-                        $('.newlist').css({ marginLeft: 0 });
-                    });
-                });
-
-    </script>
-
-    <footer></footer>
+    <footer>
+        <div id="ft_box">
+            <div class="ft1">
+                <div class="ft1_b1">
+                    <div class="ft1_b1_1">
+                        공지사항
+                    </div>
+                    <div class="ft1_b1_2">
+                        <p>[안드로이드 app] 구글플레이결제 적용 안내(2022.5.7 업데이트)</p>
+                        <p>JUST WATCH 시리즈물 시청 안내</p>
+                        <p>[업데이트] 5월 1주 프로그램 리스트</p>
+                    </div>
+                    <div class="ft1_b1_3">
+                        <div class="ft1b13_1">&lt;</div>
+                        <div class="ft1b13_2">&gt;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft2">
+                <div class="ft2_t1">
+                    <ul class="ft_li_1">
+                        <li>회사소개</li>
+                        <li>인재채용</li>
+                        <li>서비스 소개</li>
+                        <li>이용약관</li>
+                        <li><span class="ft_bold">개인정보 처리방침</span></li>
+                        <li>고객센터</li>
+                    </ul>
+                    <ul class="ft_li_2">
+                        <li>JUST WATCH 주식회사</li>
+                        <li>|</li>
+                        <li>대표이사 JUST</li>
+                        <li>|</li>
+                        <li>고객센터 1234-5678(평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)</li>
+                    </ul>
+                    <ul class="ft_li_3">
+                        <li>사업자 등록 번호: 220-88-365</li>
+                        <li>호스팅 서비스 제공자: 라인hub</li>
+                    </ul>
+                    <ul class="ft_li_4">
+                        <li>경기도 안산시 단원구 코스모스프라자 6층</li>
+                        <li>|</li>
+                        <li>전자우편주소: justwatch@line.com</li>
+                    </ul>
+                    <ul class="ft_li_5">
+                        <li>이 페이지는 상업적으로 사용하지 않는 포트폴리오 입니다.</li>
+                    </ul>
+                </div>
+                <div class="ft2_t2">
+                    <div class="ft2_t2_b">
+                       <img src="img/common/logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
