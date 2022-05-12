@@ -13,22 +13,9 @@
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/slidebox.js"></script>
     <!--slide_box-->
-    <script>
-        $(function () {
-            function slide() {
-                $('.slide').stop().animate({ marginLeft: -270 }, 1990, function () {
-                    $('.slide div:first').appendTo('.slide');
-                    $('.slide').css({ marginLeft: 0 });
-                });
-            }
-            setInterval(slide, 3000)
-        });
-         /**
-         * marginLeft = img width+margin+imgbox margin-left
-           .css({marginLeft=imgbox margin-left}) box 초기값으로 돌아올 때**/
-
-    </script>
+    
 
 </head>
 
@@ -46,7 +33,7 @@
                 <li> <a href="schedule.html">스케쥴 </a> </li>
 
 
-                <li> <a href="browse.html">브라우저</a></li>
+                <li> <a href="#">브라우저</a></li>
 
             </ul>
         </nav>
@@ -176,10 +163,10 @@
                         <h3>새로 올라온 작품</h3><img src="img/hashtags_box/new.jpg" alt="">
                     </a>
                 </div>
-                <div class="hashtags_box2"><a href="movies.html">>
+                <div class="hashtags_box2"><a href="movies.html">
                         <h3>BEST Pick!</h3><img class="img" src="img/hashtags_box/newup.jpg" alt="a">
                     </a></div>
-                <div class="hashtags_box3"><a href="movies.html">>
+                <div class="hashtags_box3"><a href="movies.html">
                         <h3>공개 예정인 작품</h3><img src="img/hashtags_box/soon.jpg" alt="a">
                     </a></div>
                 <div class="hashtags_box4"> <a href="movies.html">
