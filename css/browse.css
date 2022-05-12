@@ -212,13 +212,13 @@ footer {
     height: 40px;
 }
 
-.ft1_b1{
+.ft1_b1 {
     width: 1750px;
     margin: 0 auto;
     height: 100%;
 }
 
-.ft1_b1_1{
+.ft1_b1_1 {
     color: white;
     width: 100px;
     height: 100%;
@@ -228,21 +228,21 @@ footer {
     font-family: MinSans-Light;
 }
 
-.ft1_b1_2{
+.ft1_b1_2 {
     height: 100%;
     width: 1000px;
     float: left;
     overflow: hidden;
 }
 
-.ft1_b1_2 p{
+.ft1_b1_2 p {
     color: white;
     width: 100%;
     padding-top: 10px;
     font-family: MinSans-Light;
 }
 
-.ft1_b1_3{
+.ft1_b1_3 {
     width: 80px;
     height: 100%;
     float: right;
@@ -250,7 +250,7 @@ footer {
     background-color: red;
 }
 
-.ft1b13_1{
+.ft1b13_1 {
     width: 50%;
     height: 100%;
     color: white;
@@ -258,7 +258,7 @@ footer {
     float: left;
 }
 
-.ft1b13_2{
+.ft1b13_2 {
     width: 50%;
     height: 100%;
     color: white;
@@ -397,11 +397,12 @@ footer {
     font-weight: bold;
     font-family: MinSans-Light;
 }
-.ft2_t2_b img{
+
+.ft2_t2_b img {
     margin: 20px;
 }
 
-.ft2_t2_b p{
+.ft2_t2_b p {
     background-color: white;
     width: 60px;
     color: #333;

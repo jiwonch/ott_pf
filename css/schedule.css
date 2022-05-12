@@ -37,7 +37,7 @@ a {
 }
 
 /* schedule 상단 제목 */
-#sub_main_box > #schedule_top_text {
+#sub_main_box>#schedule_top_text {
     width: 100%;
     height: 69px;
     text-align: center;
@@ -46,48 +46,52 @@ a {
     margin: 35px 0;
 }
 
-#sub_main_box > #schedule_top_text h1 {
+#sub_main_box>#schedule_top_text h1 {
     font-size: 48px;
     /* color: #fff; */
 }
 
 /* 메인 주차별 상영예정작 슬라이드 박스 */
 
-.slide_wrapper{
+.slide_wrapper {
     position: relative;
     width: 1000px;
     margin: 0 auto;
     height: 50px;
-    overflow:hidden;
+    overflow: hidden;
 }
-.slides{
+
+.slides {
     position: absolute;
-    left:0; top:0;  
+    left: 0;
+    top: 0;
 }
-.slides.animated{
+
+.slides.animated {
     transition: 0.5s ease-out;
 }
-.slides li{
+
+.slides li {
     width: 140px;
     height: 50px;
-    float:left;
+    float: left;
     line-height: 22px;
     cursor: pointer;
 }
 
-.slides li:hover div{
+.slides li:hover div {
     color: #fff;
 }
 
-.slides li:hover div:nth-of-type(1){
+.slides li:hover div:nth-of-type(1) {
     font-size: 20px;
 }
 
-.slides li:hover div:nth-of-type(2){
+.slides li:hover div:nth-of-type(2) {
     font-size: 14px;
 }
 
-.slides li:not(:last-child){    
+.slides li:not(:last-child) {
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -142,13 +146,14 @@ a {
     margin-top: 50px;
 } */
 
-#button_box .controls span{
-    background:#333;
+#button_box .controls span {
+    background: #333;
     color: #fff;
-    padding:10px 20px;
-    margin:0 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
 
 }
+
 /* #sub_main_box > #schedule_date_box {
     width: 1130px;
     height: 72px;
@@ -203,6 +208,7 @@ a {
     margin: 0 auto;
     margin-top: 45px;
 }
+
 .movie_type_box .movie_type {
     width: 300px;
     height: 64px;
@@ -273,12 +279,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_img1.jpg");
 
     background-size: cover;
@@ -290,7 +295,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box1:hover video{
+.schedule_main_img_box1:hover video {
     display: block;
 }
 
@@ -299,12 +304,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_image2.jpg");
 
     background-size: cover;
@@ -316,7 +320,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box2:hover video{
+.schedule_main_img_box2:hover video {
     display: block;
 }
 
@@ -325,12 +329,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_image3.jpg");
 
     background-size: cover;
@@ -342,7 +345,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box3:hover video{
+.schedule_main_img_box3:hover video {
     display: block;
 }
 
@@ -351,12 +354,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_image4.jpg");
 
     background-size: cover;
@@ -368,7 +370,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box4:hover video{
+.schedule_main_img_box4:hover video {
     display: block;
 }
 
@@ -377,12 +379,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_image5.jpg");
 
     background-size: cover;
@@ -394,7 +395,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box5:hover video{
+.schedule_main_img_box5:hover video {
     display: block;
 }
 
@@ -403,12 +404,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_image6.jpg");
 
     background-size: cover;
@@ -420,7 +420,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box6:hover video{
+.schedule_main_img_box6:hover video {
     display: block;
 }
 
@@ -429,12 +429,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_img7.jpg");
 
     background-size: cover;
@@ -446,7 +445,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box7:hover video{
+.schedule_main_img_box7:hover video {
     display: block;
 }
 
@@ -455,12 +454,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_img8.jpg");
 
     background-size: cover;
@@ -472,7 +470,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box8:hover video{
+.schedule_main_img_box8:hover video {
     display: block;
 }
 
@@ -481,12 +479,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_img9.jpg");
 
     background-size: cover;
@@ -498,7 +495,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box9:hover video{
+.schedule_main_img_box9:hover video {
     display: block;
 }
 
@@ -507,12 +504,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_img10.jpg");
 
     background-size: cover;
@@ -524,7 +520,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box10:hover video{
+.schedule_main_img_box10:hover video {
     display: block;
 }
 
@@ -533,12 +529,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_img11.jpg");
 
     background-size: cover;
@@ -550,7 +545,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box11:hover video{
+.schedule_main_img_box11:hover video {
     display: block;
 }
 
@@ -559,12 +554,11 @@ a {
     width: 370px;
     height: 203px;
     /* border: 1px solid #333; */
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0.4) 70%,
-        rgba(0, 0, 0, 0.7) 80%,
-        rgb(0, 0, 0, 1) 100%),
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7) 80%,
+            rgb(0, 0, 0, 1) 100%),
         url("../img/schedule/movie_img12.jpg");
 
     background-size: cover;
@@ -582,7 +576,7 @@ a {
     margin-top: -1px;
 }
 
-.play_icon_box span{
+.play_icon_box span {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
@@ -596,7 +590,7 @@ a {
     margin-left: 5px;
 }
 
-.play_icon_box2 span{
+.play_icon_box2 span {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
@@ -610,7 +604,7 @@ a {
     display: none;
 }
 
-.schedule_main_img_box12:hover video{
+.schedule_main_img_box12:hover video {
     display: block;
 }
 
@@ -643,7 +637,7 @@ a {
 
 .movie_story_text_box {
     width: 443px;
-    height: 100px;    
+    height: 100px;
     font-size: 15px;
     color: #fff;
     letter-spacing: 1px;
@@ -718,7 +712,7 @@ footer {
 }
 
 
-footer > #footer_middle {
+footer>#footer_middle {
     width: 100%;
     height: 1px;
     background-color: white;
@@ -726,7 +720,7 @@ footer > #footer_middle {
 }
 
 /* footer bottom 박스 */
-footer > #footer_bottom_box {
+footer>#footer_bottom_box {
     width: 100%;
     height: 14px;
     /* border: 1px solid #333; */
@@ -734,7 +728,7 @@ footer > #footer_bottom_box {
     justify-content: space-between;
 }
 
-footer > #footer_bottom_box > .footer_bottom_ul > li {
+footer>#footer_bottom_box>.footer_bottom_ul>li {
     float: right;
     margin-right: 40px;
     font-size: 14px;
@@ -742,7 +736,7 @@ footer > #footer_bottom_box > .footer_bottom_ul > li {
     color: #fff;
 }
 
-footer > #footer_bottom_box > .footer_bottom_company {
+footer>#footer_bottom_box>.footer_bottom_company {
     font-size: 14px;
     float: right;
     margin-right: 15px;
